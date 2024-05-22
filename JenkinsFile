@@ -1,0 +1,13 @@
+ pipline{
+    agent : any
+    stages{
+        stage()
+       stage('build'){
+        step{
+            echo "script execution started"
+            sh 'python3 test.py'
+            
+        }
+       } 
+    }
+ }
