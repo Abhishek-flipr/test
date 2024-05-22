@@ -1,11 +1,11 @@
  pipline{
-    agent : any
+    agent any
     stages{
-        stage()
        stage('build'){
         step{
-            echo "script execution started"
-            
+            script{
+                echo "script execution started"
+            }            
         }
        } 
     }
