@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 script {
+                    sh "python test.py"
                     echo "script execution started"
                 }
             }
