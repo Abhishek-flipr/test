@@ -1,12 +1,12 @@
- pipeline{
+pipeline {
     agent any
-    stages{
-       stage('build'){
-        step{
-            script{
-                echo "script execution started"
-            }            
+    stages {
+        stage('build') {
+            steps {
+                script {
+                    echo "script execution started"
+                }
+            }
         }
-       } 
     }
- }
+}
